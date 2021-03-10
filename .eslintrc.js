@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    project: "./tsconfig.json"
+    project: "./tsconfig.json",
   },
   plugins: ["@typescript-eslint"],
   extends: ["airbnb-typescript", "prettier/@typescript-eslint"],
@@ -14,16 +14,16 @@ module.exports = {
       {
         html: "ignore",
         custom: "ignore",
-        exceptions: []
-      }
+        exceptions: [],
+      },
     ],
     "implicit-arrow-linebreak": 0,
     "react/jsx-curly-newline": 0,
-    "react/jsx-one-expression-per-line": 0
+    "react/jsx-one-expression-per-line": 0,
   },
   settings: {
     "import/resolver": {
-      typescript: {} // this loads <rootdir>/tsconfig.json to eslint
-    }
-  }
+      typescript: {}, // this loads <rootdir>/tsconfig.json to eslint
+    },
+  },
 };
